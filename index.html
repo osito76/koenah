@@ -1,5 +1,130 @@
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="Everyday hoodies, considered carefully. Discover the Koenah essentials collection.">
+  <title>koenah — Everyday, elevated.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-test
+  <div class="announcement">A little more comfort, every day. <span>Free shipping on orders over $75</span></div>
+  <header class="site-header">
+    <button class="menu-toggle icon-button" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a class="brand" href="#" aria-label="Koenah home"><img src="assets/koenah-logo.png" alt="koenah"></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#story">Our approach</a><a href="#details">The details</a>
+    </nav>
+    <button class="cart-button" id="open-cart" aria-label="Open shopping bag">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE EVERYDAY COLLECTION</p>
+        <h1>Comfort looks<br><em>good on you.</em></h1>
+        <p class="hero-description">Easy layers. Thoughtful details. The hoodie you reach for without thinking twice.</p>
+        <a class="button button-dark" href="#shop">Shop hoodies <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="small-dot"></span> Made for slow mornings and everything after.</div>
+      </div>
+      <div class="hero-art" aria-label="Minimal hoodie product illustration">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="hero-label label-top">SOFT BY DESIGN</div>
+        <svg class="hoodie-illustration" viewBox="0 0 480 500" role="img" aria-label="Illustration of a navy hoodie">
+          <defs>
+            <linearGradient id="fabric" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#26326f"/><stop offset="1" stop-color="#111747"/></linearGradient>
+          </defs>
+          <path d="M170 111 C174 64 202 35 240 35 C278 35 306 64 310 111 L350 130 C376 144 393 171 400 202 L439 355 L355 383 L330 315 L327 455 L153 455 L150 315 L125 383 L41 355 L80 202 C87 171 104 144 130 130 Z" fill="url(#fabric)"/>
+          <path d="M170 111 C180 146 202 165 240 165 C278 165 300 146 310 111" fill="none" stroke="#56619a" stroke-width="5" opacity=".7"/>
+          <path d="M195 112 C203 91 219 78 240 78 C261 78 277 91 285 112 C271 132 257 141 240 141 C223 141 209 132 195 112Z" fill="#0c123b"/>
+          <path d="M206 179 L206 239 Q240 257 274 239 L274 179" fill="none" stroke="#4b568b" stroke-width="3" opacity=".75"/>
+          <path d="M195 190 L195 286 Q240 300 285 286 L285 190" fill="none" stroke="#4b568b" stroke-width="3" opacity=".75"/>
+          <path d="M191 325 Q240 345 289 325 L282 367 Q240 385 198 367Z" fill="#0e143e" opacity=".7"/>
+          <path d="M178 455 L178 467 M302 455 L302 467" stroke="#c6c9d7" stroke-width="4" stroke-linecap="round"/>
+          <path d="M155 455 L325 455" stroke="#56619a" stroke-width="4" opacity=".6"/>
+          <path d="M112 220 L75 348 M368 220 L405 348" stroke="#56619a" stroke-width="4" opacity=".45"/>
+        </svg>
+        <div class="hero-label label-bottom">YOUR NEW GO-TO</div>
+        <div class="color-chip"><span></span><div><b>Midnight navy</b><small>One of the essentials</small></div></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Brand values">
+      <span>LESS, BUT BETTER</span><b>✳</b><span>EVERYDAY COMFORT</span><b>✳</b><span>MADE TO BE WORN</span><b>✳</b><span>LESS, BUT BETTER</span>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div><p class="eyebrow">THE FIRST EDIT</p><h2>Meet your new <em>favorite.</em></h2></div>
+        <p>Clean shapes. Quiet colors. No overthinking required.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter products">
+        <button class="filter active" data-filter="all">All hoodies <span>04</span></button>
+        <button class="filter" data-filter="classic">Classic fit</button>
+        <button class="filter" data-filter="relaxed">Relaxed fit</button>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-type="classic" data-id="essential-navy" data-name="The Essential Hoodie" data-price="58">
+          <div class="product-image product-navy"><span class="product-tag">BESTSELLER</span><button class="quick-add" aria-label="Add The Essential Hoodie to bag">+</button><div class="mini-hoodie navy-hoodie"></div><span class="image-caption">01 / MIDNIGHT</span></div>
+          <div class="product-info"><div><h3>The Essential Hoodie</h3><p>Classic fit · Midnight</p></div><span class="price">$58</span></div>
+          <div class="swatches"><button class="swatch navy active" aria-label="Midnight navy"></button><button class="swatch oat" aria-label="Oat"></button><button class="swatch charcoal" aria-label="Charcoal"></button></div>
+        </article>
+        <article class="product-card" data-type="relaxed" data-id="weekend-oat" data-name="The Weekend Hoodie" data-price="64">
+          <div class="product-image product-oat"><span class="product-tag">EASY LAYER</span><button class="quick-add" aria-label="Add The Weekend Hoodie to bag">+</button><div class="mini-hoodie oat-hoodie"></div><span class="image-caption">02 / OAT</span></div>
+          <div class="product-info"><div><h3>The Weekend Hoodie</h3><p>Relaxed fit · Oat</p></div><span class="price">$64</span></div>
+          <div class="swatches"><button class="swatch oat active" aria-label="Oat"></button><button class="swatch navy" aria-label="Midnight navy"></button><button class="swatch sage" aria-label="Sage"></button></div>
+        </article>
+        <article class="product-card" data-type="classic" data-id="everyday-charcoal" data-name="The Everyday Hoodie" data-price="58">
+          <div class="product-image product-charcoal"><button class="quick-add" aria-label="Add The Everyday Hoodie to bag">+</button><div class="mini-hoodie charcoal-hoodie"></div><span class="image-caption">03 / CHARCOAL</span></div>
+          <div class="product-info"><div><h3>The Everyday Hoodie</h3><p>Classic fit · Charcoal</p></div><span class="price">$58</span></div>
+          <div class="swatches"><button class="swatch charcoal active" aria-label="Charcoal"></button><button class="swatch oat" aria-label="Oat"></button><button class="swatch navy" aria-label="Midnight navy"></button></div>
+        </article>
+        <article class="product-card" data-type="relaxed" data-id="off-duty-sage" data-name="The Off-Duty Hoodie" data-price="64">
+          <div class="product-image product-sage"><span class="product-tag">NEW COLOR</span><button class="quick-add" aria-label="Add The Off-Duty Hoodie to bag">+</button><div class="mini-hoodie sage-hoodie"></div><span class="image-caption">04 / SAGE</span></div>
+          <div class="product-info"><div><h3>The Off-Duty Hoodie</h3><p>Relaxed fit · Sage</p></div><span class="price">$64</span></div>
+          <div class="swatches"><button class="swatch sage active" aria-label="Sage"></button><button class="swatch oat" aria-label="Oat"></button><button class="swatch charcoal" aria-label="Charcoal"></button></div>
+        </article>
+      </div>
+      <p class="prototype-note">Storefront concept — product names, prices, colors, and checkout are sample content.</p>
+    </section>
+
+    <section class="story-section" id="story">
+      <div class="story-art"><div class="story-circle"></div><div class="story-word">wear<br>it well.</div><span class="story-stamp">K / EVERYDAY GOODS</span></div>
+      <div class="story-copy"><p class="eyebrow">A SIMPLER KIND OF ESSENTIAL</p><h2>Good clothes.<br><em>Less noise.</em></h2><p>We believe the best pieces don't need to shout. Koenah is about the everyday uniform: considered colors, easy shapes, and comfort that feels right from the first wear.</p><a href="#details" class="text-link">A little more about us <span>↗</span></a></div>
+    </section>
+
+    <section class="details-strip" id="details">
+      <div><span class="detail-icon">01</span><h3>Easy to wear</h3><p>Relaxed essentials that fit into your real life.</p></div>
+      <div><span class="detail-icon">02</span><h3>Thoughtful color</h3><p>A quiet palette made to mix and match.</p></div>
+      <div><span class="detail-icon">03</span><h3>Keep it simple</h3><p>Everyday pieces, without the extra noise.</p></div>
+    </section>
+
+    <section class="newsletter">
+      <p class="eyebrow">NOTES FROM KOENAH</p><h2>A good thing, <em>occasionally.</em></h2><p>New drops, favorite colors, and a little something for your inbox.</p>
+      <form id="newsletter-form"><label class="sr-only" for="email">Email address</label><input id="email" type="email" placeholder="Your email address" required><button type="submit">Join us <span>↗</span></button></form><small id="newsletter-message">No noise. Unsubscribe whenever.</small>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="footer-brand" href="#">koenah<span>®</span></a>
+    <p>Everyday, elevated.</p>
+    <div class="footer-links"><a href="#shop">Shop</a><a href="mailto:hello@koenah.com">Contact</a><a href="#details">Shipping & returns</a><a href="#details">Instagram ↗</a></div>
+    <small>© <span id="year"></span> Koenah. All good things.</small>
+  </footer>
+
+  <div class="cart-overlay" id="cart-overlay" hidden>
+    <button class="overlay-backdrop" id="close-cart" aria-label="Close shopping bag"></button>
+    <aside class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-header"><h2 id="cart-title">Your bag <span id="drawer-count">(0)</span></h2><button id="close-cart-x" class="icon-button" aria-label="Close bag">✕</button></div>
+      <div id="cart-items" class="cart-items"><p class="empty-cart">Your bag is taking it easy.<br>Find something you love.</p></div>
+      <div class="cart-footer"><div class="subtotal"><span>Subtotal</span><b id="cart-subtotal">$0</b></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark checkout-button" id="checkout-button">Continue to checkout <span>↗</span></button><small>Demo storefront — checkout is not connected.</small></div>
+    </aside>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
 </body>
 </html>
